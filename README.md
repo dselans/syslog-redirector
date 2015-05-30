@@ -68,8 +68,8 @@ ls -l
 and redirect it's stdout and stderr to TCP syslog running at `10.0.3.1:6514`
 and the name that will show up in the syslogs is `test-ls-thingy`.
 
-Normally, it uses TCP connections to syslog, but the `-t` switch can be used
-to tell it to use UDP instead.
+Normally, it uses UDP connections to syslog, but the `-t` switch can be used
+to tell it to use TCP instead.
 
 Standard out will be logged as `LOG_INFO` and standard error will be
 logged as `LOG_ERROR`.
